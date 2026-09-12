@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Giáo xứ Hải Ninh - Giáo phận Hải Phòng">
+  <title>Giáo xứ Hải Ninh</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav container">
+      <div class="brand"><span class="brand-mark">✦</span><div><strong>GIÁO XỨ HẢI NINH</strong><small>Giáo phận Hải Phòng</small></div></div>
+      <button class="menu-btn" id="menuBtn">☰</button>
+      <div class="nav-links" id="navLinks"><a href="#gioi-thieu">Giới thiệu</a><a href="#phung-vu">Phụng vụ</a><a href="#du-lieu">Dữ liệu Giáo xứ</a><a href="#hoi-doan">Hội đoàn</a><a href="#muc-tu">Mục tử</a></div>
+    </nav>
+    <div class="hero-content container">
+      <p class="eyebrow">✦ ĐỨC TIN · HIỆP NHẤT · PHỤC VỤ ✦</p>
+      <h1>Giáo xứ Hải Ninh</h1>
+      <p>Ngôi nhà chung của cộng đoàn Dân Chúa Hải Ninh và Giáo họ Viên Chử.</p>
+      <div class="hero-actions"><a class="btn primary" href="#gioi-thieu">Khám phá Giáo xứ</a><a class="btn ghost" href="#phung-vu">Lịch phụng vụ</a></div>
+    </div>
+  </header>
+
+  <main>
+    <section id="gioi-thieu" class="section container">
+      <div class="section-heading"><span>01</span><div><p class="eyebrow">CỘNG ĐOÀN</p><h2>Giáo xứ Hải Ninh</h2></div></div>
+      <div class="intro-grid"><article class="card featured"><p class="card-kicker">GIÁO XỨ</p><h3>Giáo xứ Hải Ninh</h3><p>Không gian thông tin chung của giáo xứ, nơi kết nối đời sống phụng vụ, giáo dân, các hội đoàn và hoạt động mục vụ.</p></article><article class="card"><p class="card-kicker">GIÁO HỌ</p><h3>Giáo họ Viên Chử</h3><p>Thông tin riêng của cộng đoàn Giáo họ Viên Chử được tổ chức trong cùng hệ thống dữ liệu giáo xứ.</p></article></div>
+    </section>
+
+    <section id="phung-vu" class="section alt"><div class="container"><div class="section-heading"><span>02</span><div><p class="eyebrow">ĐỜI SỐNG ĐỨC TIN</p><h2>Lịch phụng vụ</h2></div></div><div class="calendar"><div><strong>HÔM NAY</strong><p>Thánh lễ và các giờ cầu nguyện</p></div><div class="calendar-time">07:00<br><small>Thánh lễ</small></div><div class="calendar-time">19:00<br><small>Thánh lễ</small></div></div></div></section>
+
+    <section id="du-lieu" class="section container"><div class="section-heading"><span>03</span><div><p class="eyebrow">QUẢN LÝ</p><h2>Dữ liệu Giáo xứ</h2></div></div><div class="cards"><article class="card"><span class="icon">♙</span><h3>Danh sách giáo dân</h3><p>Tra cứu hồ sơ giáo dân và thông tin cộng đoàn.</p><button onclick="showNotice('Danh sách giáo dân')">Mở mục</button></article><article class="card"><span class="icon">⌂</span><h3>Hộ gia đình</h3><p>Quản lý các hộ gia đình và mối liên hệ trong giáo xứ.</p><button onclick="showNotice('Hộ gia đình')">Mở mục</button></article><article class="card"><span class="icon">◎</span><h3>Hồ sơ 360°</h3><p>Trang tổng hợp thông tin của từng giáo dân.</p><button onclick="showNotice('Hồ sơ giáo dân 360°')">Mở mục</button></article></div></section>
+
+    <section id="hoi-doan" class="section alt"><div class="container"><div class="section-heading"><span>04</span><div><p class="eyebrow">PHỤC VỤ</p><h2>Hội đoàn</h2></div></div><div class="org-grid"><span>Ca đoàn Trinh Nữ Vương</span><span>Thiếu Nhi Thánh Thể</span><span>Giới trẻ</span><span>Hội Phê-rô</span><span>Hội Con Đức Mẹ</span><span>Tràng Hạt Mân Côi</span><span>Lòng Thương Xót Chúa</span><span>Kim Nhạc</span><span>Thánh Nhạc</span></div></div></section>
+
+    <section id="muc-tu" class="section container"><div class="section-heading"><span>05</span><div><p class="eyebrow">LỊCH SỬ MỤC VỤ</p><h2>Các vị Mục tử qua từng thời kỳ</h2></div></div><div class="timeline"><div><b>Qua các thời kỳ</b><p>Danh sách và thông tin các vị mục tử từng phục vụ cộng đoàn Giáo xứ Hải Ninh.</p></div></div></section>
+  </main>
+
+  <footer><div class="container footer-inner"><div><strong>GIÁO XỨ HẢI NINH</strong><p>Giáo phận Hải Phòng</p></div><p>© <span id="year"></span> Giáo xứ Hải Ninh</p></div></footer>
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
